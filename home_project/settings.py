@@ -27,7 +27,10 @@ SECRET_KEY = 'django-insecure-6k*qqed7#)b0gg_yf#maf46-xz3qv)=6+hk70d_xhhskn7e8-1
 DEBUG = bool(int(os.environ.get('DEBUG', 1)))
 # DEBUG = True
 
-ALLOWED_HOSTS=[]
+ALLOWED_HOSTS = [
+'ec2-3-70-209-117.eu-central-1.compute.amazonaws.com',
+'127.0.0.1'
+]
 # ALLOWED_HOSTS=['*']
 
 CORS_ALLOW_ALL_ORIGINS = True
